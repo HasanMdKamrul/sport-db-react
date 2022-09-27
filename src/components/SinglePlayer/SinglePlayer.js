@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SinglePlayer = ({handleAddToCart,player,player:{strNationality,strCutout}}) => {
+const SinglePlayer = ({handleBookMark,handleAddToCart,player,player:{strNationality,strCutout}}) => {
     return (
         <div>
             <div className="card h-full card-side bg-base-100 shadow-xl">
@@ -11,7 +11,7 @@ const SinglePlayer = ({handleAddToCart,player,player:{strNationality,strCutout}}
                         <button onClick={()=>handleAddToCart(player)} className="btn btn-primary">Add To Cart</button>
                     </div>
                     <div className="card-actions justify-start">
-                        <button className="btn btn-primary">Bookmark</button>
+                        <button onClick={()=>handleBookMark(player)} className="btn btn-primary">Bookmark</button>
                     </div>
                 </div>
             </div>

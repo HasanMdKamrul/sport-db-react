@@ -5,11 +5,11 @@ const Player = ({handleDelete,player}) => {
   
     return (
         <div>
-            <ul>
+            <h1>Player count: {player.length} </h1>
                {
                  player?.map(singlePlayer => <PlayerCart handleDelete={handleDelete} key={Math.random()} singlePlayer={singlePlayer}/>)
                }
-            </ul>
+           
         </div>
     );
 };
